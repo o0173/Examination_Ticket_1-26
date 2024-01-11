@@ -21,5 +21,6 @@ public class DeveloperDTO {
 
     private String messenger;
 
+    @Pattern(regexp = "^\\+38\\(\\d{3}\\) \\d{3}(-\\d\\d){2}$", message = "Phone number must be format +38(0xx) XXX-XX-XX")
     private String phoneNumber;
 }
